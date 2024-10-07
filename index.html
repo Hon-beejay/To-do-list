@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            /* align-items: center; */
+            height: 100vh;
+            background-color: hsl(240, 45%, 71%);
+            gap: 10px;
+            padding: 10px;
+            margin: auto;
+        }
+        body * {
+            font-size: 1.2rem;
+            /* border-radius: 10px; */
+        }
+        .big{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            background-color: white;
+            border-radius: 10px;
+            width: 150px;
+            cursor: pointer;
+        }
+        .small{
+            background-color: white;
+            width: 500px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            /* overflow: scroll; */
+        }
+        .a{
+            background-color: rgba(123, 123, 240, 0.629);
+            height: 50px;
+            display: flex;
+            padding: 7px 10px;
+            gap: 5px;
+            border-radius: 10px 10px 0px 0px;
+        }
+        .a>input{
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            outline: none;
+            border: 1px solid rgb(113, 60, 60);
+            padding-left: 10px;
+        }
+        .a>button{
+            width: 100px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .data{
+            padding: 10px 10px;
+            border-bottom: 1px solid rgba(123, 123, 240, 0.629);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* overflow: scroll; */
+        }
+        img{
+            width: 30px;
+            cursor: pointer;
+        }
+        .b {
+            /* height: 250px; */
+            max-height: 200px;
+            min-height: 100px;
+            width: 100%;
+            overflow: auto;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+        .b::-webkit-scrollbar {
+            display: none; /* Hide the scrollbar for WebKit browsers */
+        }
+        h1 {
+            font-size: 2rem;
+            color: firebrick;
+        }
+    </style>
+</head>
+<body>
+    <h1>To do list</h1>
+    <div class="big">
+        <img src="save folder.png" alt="">
+        <p>Create task</p>
+    </div>
+
+    <div class="minor"></div>    
+
+    <script src="script.js"></script>
+</body>
+</html>
